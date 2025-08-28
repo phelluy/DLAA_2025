@@ -3,8 +3,11 @@ Source files for the practical session on time series of the summer school "Deep
 
 ## Installation
 More comfortable with a Google account...
+
 (if you don't want to have one, you can also, with small adaptations, run the Jupyter notebooks on a computer with a recent 16GB GPU)
+
 Create first at the root of your Google Drive a folder named `DLAA_2025`
+
 In this folder, copy the following files from this Github repository:
 
 - `dataset.jsonl` : the dataset that has been generated from a large LLM (pixtral-large) and curated.
@@ -12,6 +15,7 @@ In this folder, copy the following files from this Github repository:
 - `check_training.ipynb`: a notebook for checking the training of the small Qwen LLM.
 
 Then, in Google Drive, open the file `time_series.ipynb` with Google Colab.
+
 You have to activate the T4 GPU execution from the Colab menus:
 ![colab_config.png](colab_config.png)
 
