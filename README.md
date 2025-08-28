@@ -14,7 +14,7 @@ In this folder, copy the following files from this Github repository:
 - `time_series.ipynb` : a notebook for fine-tuning the small Qwen LLM.
 - `check_training.ipynb`: a notebook for checking the training of the small Qwen LLM.
 
-Then, in Google Drive, open the file `time_series.ipynb` with Google Colab.
+Then, in Google Drive, open the file `time_series.ipynb` with Google Colab. You'll maybe have to install the extension Collaboratory in Google Drive (right clic on the .ipynb file, open with... , additional apps, search for "colaboratory", install).
 
 You have to activate the T4 GPU execution from the Colab menus:
 ![colab_config.png](colab_config.png)
