@@ -12,6 +12,7 @@
 % import listings package
 \usepackage{minted}
 
+\synctex=1
 \makeatletter
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
@@ -240,6 +241,36 @@ Put the description in a JSON format with the following pattern
 Series: [02, 01, 00, 03, ... ]
 \end{minted}
 \item Tokenization is essential: the values in the series are scaled to the range 00..99.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Necessity of training}
+
+\begin{itemize}
+\item Small LLM fails to answer properly. It generates total garbage.
+\item Example of output:\\
+\begin{minted}[fontsize=\tiny]{markdown}
+series name: \"series\"
+time interval: 1 day
+``` To provide a detailed analysis of the given time series data, I will break it down into its components:
+### Time Series Description:
+The provided time series consists of daily values for several variables over a period of one year (assuming 365 days).
+### Trend Analysis:
+- **Increase**: The values increase steadily from 01 to 04, then decrease again.
+- **Decrease**: The values decrease from 04 onwards
+...
+\end{minted}
+\item Let's try to improve this with supervised fine tuning
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Practical methodology}
+
+\begin{itemize}
+\item Generate a dataset of correct examples with a large LLM (Mistral, ChatGPT, etc.)
+\item Apply a supervised fine tuning (SFT) procedure on a small LLM from this dataset.
+\item In order to reduce the cost we adopt a LoRA approach. \footnote{The LoRA (Low-Rank Adaptation) approach in supervised fine-tuning (SFT) freezes the original model weights and injects small trainable low-rank matrices into certain layers (typically linear projections in attention/FFN). This drastically reduces the number of parameters that need updating, making fine-tuning large models much more memory- and compute-efficient while still achieving strong adaptation.}
+\item Now go to \url{https://github.com/phelluy/DLAA_2025} and follow the README file.
 \end{itemize}
 \end{frame}
 %
