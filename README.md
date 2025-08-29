@@ -17,7 +17,7 @@ In this folder, copy the following files from this Github repository:
 Then, in Google Drive, open the file `time_series.ipynb` with Google Colab. You'll maybe have to install the extension Collaboratory in Google Drive (right clic on the .ipynb file, open with... , additional apps, search for "colaboratory", install).
 
 You have to activate the T4 GPU execution from the Colab menus:
-![colab_config.png](colab_config.png)
+![colab_config.png](slides/colab_config.png)
 
 You can then execute the notebook step by step. You will have to grant access to your Google Drive at one moment. Just allow read and write access to files (not to other marketing-related things)
 
