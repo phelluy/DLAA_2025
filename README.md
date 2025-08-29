@@ -30,3 +30,12 @@ Once the training is finished (or at least once one checkpoint has been saved), 
 This notebook creates a subfolder `plotdiag` where you can check the results of the training on the testing part of the dataset.
 
 BONUS: there is also a notebook `ts_dataset.ipynb` that you can download to your Google Drive to see how the dataset can be generated through OpenAI compatible API calls.
+
+All the code and documents in this repository can be use freely. If you use them you can cite the associated paper:
+
+@article{boileau2025towards,
+  title={Towards Interpretable Time Series Foundation Models},
+  author={Boileau, Matthieu and Helluy, Philippe and Pawlus, J{\'e}r{\'e}my and Vyetrenko, Svitlana},
+  journal={arXiv preprint arXiv:2507.07439},
+  year={2025}
+}
