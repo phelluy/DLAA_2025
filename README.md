@@ -32,7 +32,7 @@ This notebook creates a subfolder `plotdiag` where you can check the results of 
 ## Bonus
 
 - there is also a notebook `ts_dataset.ipynb` that you can download to your Google Drive to see how the dataset can be generated through OpenAI compatible API calls.
-- there is a Python script `mini_llm.py` to see how to train a toy LLM from scratch. 
+- there is a Python script `mini_llm.py` (in the `slides` folder) to see how to train a toy LLM from scratch. 
 
 ## License
 
