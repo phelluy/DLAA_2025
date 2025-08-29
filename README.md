@@ -33,9 +33,11 @@ BONUS: there is also a notebook `ts_dataset.ipynb` that you can download to your
 
 All the code and documents in this repository can be use freely. If you use them you can cite the associated paper:
 
+```bibtex
 @article{boileau2025towards,
   title={Towards Interpretable Time Series Foundation Models},
   author={Boileau, Matthieu and Helluy, Philippe and Pawlus, J{\'e}r{\'e}my and Vyetrenko, Svitlana},
   journal={arXiv preprint arXiv:2507.07439},
   year={2025}
 }
+```
