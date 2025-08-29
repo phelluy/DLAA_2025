@@ -21,7 +21,7 @@ You have to activate the T4 GPU execution from the Colab menus:
 
 You can then execute the notebook step by step. You will have to grant access to your Google Drive at one moment. Just allow read and write access to files (not to other marketing-related things)
 
-I will explain, during the practical session, what is happening in the notebook.
+I have explained during the practical session, what is happening in the notebook. You can also directly ask Gemini :-).
 
 The notebook creates a folder `qwen2.5-0.5b-instruct-lora-output` with all the results.
 
@@ -29,7 +29,12 @@ Once the training is finished (or at least once one checkpoint has been saved), 
 
 This notebook creates a subfolder `plotdiag` where you can check the results of the training on the testing part of the dataset.
 
-BONUS: there is also a notebook `ts_dataset.ipynb` that you can download to your Google Drive to see how the dataset can be generated through OpenAI compatible API calls.
+## Bonus
+
+- there is also a notebook `ts_dataset.ipynb` that you can download to your Google Drive to see how the dataset can be generated through OpenAI compatible API calls.
+- there is a Python script `mini_llm.py` to see how to train a toy LLM from scratch. 
+
+## License
 
 All the code and documents in this repository can be use freely. If you use them you can cite the associated paper:
 
