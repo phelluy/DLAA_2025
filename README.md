@@ -28,3 +28,5 @@ The notebook creates a folder `qwen2.5-0.5b-instruct-lora-output` with all the r
 Once the training is finished (or at least once one checkpoint has been saved), you can open the notebook `check_training.ipynb`.
 
 This notebook creates a subfolder `plotdiag` where you can check the results of the training on the testing part of the dataset.
+
+BONUS: there is also a notebook `ts_dataset.ipynb` that you can download to your Google Drive to see how the dataset can be generated through OpenAI compatible API calls.
