@@ -200,7 +200,7 @@ $s=170$ billion...
 \item Once the parameters $w$ are computed, inference is fast.
 \item A network can be retrained for a specific task at a reduced cost
 (\emph{fine tuning}). For example, Copilot and ChatGPT are specialized
-versions of GPT-3.
+versions of GPT-x ($x=3, 4, 5$)
 \item The \textit{pre-prompt} is essential to obtain high-quality results.
 \item For computational cost reasons, \textbf{ChatGPT does not learn in
 real time}. Its short-term memory is therefore limited to a few
@@ -212,7 +212,7 @@ thousand words.
 \begin{itemize}
 \item PyTorch is a free software library developed by Huggingface
 to manipulate neural networks.
-\item Minimal usage example.
+\item Minimal example for creating a toy LLM from scratch with PyTorch (ask me).
 \end{itemize}
 \end{frame}
 
@@ -264,16 +264,18 @@ The provided time series consists of daily values for several variables over a p
 
 \begin{itemize}
 \item Generate a dataset of correct examples with a large LLM (Mistral, ChatGPT, etc.)
+\item Use 90\% of the dataset for training and the 10\% left for evaluation.
 \item Apply a supervised fine tuning (SFT) procedure on a small LLM from this dataset.
 \item In order to reduce the cost we adopt a LoRA approach. \footnote{The LoRA (Low-Rank Adaptation) approach in supervised fine-tuning (SFT) freezes the original model weights and injects small trainable low-rank matrices into certain layers (typically linear projections in attention/FFN). This drastically reduces the number of parameters that need updating, making fine-tuning large models much more memory- and compute-efficient while still achieving strong adaptation.}
 \item Now go to \url{https://github.com/phelluy/DLAA_2025} and follow the README file.
+\item The Colab GPU memory is limited, I had to reduce the size of the computations. For full results see \cite{bhv2025towards}.
 \end{itemize}
 \end{frame}
 %
 \begin{frame}[allowframebreaks]{Bibliographie}
 
 \tiny\bibliographystyle{apalike-fr}
-\nocite{*}
+%\nocite{*}
 \bibliography{copilot}
 
 \end{frame}
